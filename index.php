@@ -36,8 +36,9 @@ if (isset($_SESSION['info'])) {
 if (isset($_GET["action"])) {
     $action = $_GET["action"];
 } else {
-    $action = "index";
+    $action = "login";
 }
+
 
 // Est ce que cette action existe dans la liste des actions
 if (array_key_exists($action, $listeDesActions) == false) {

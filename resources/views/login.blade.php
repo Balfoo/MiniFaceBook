@@ -1,10 +1,15 @@
 <?php
 $titre="Login";
 ?>
-@extends('layouts.app')
+@extends('layouts.log')
 
 @section('content')
-    <p>Ceci est la page de connexion</p>
+
+<div class="login-fond">
+
+    <div class="login-logo">
+        <h1><span class="logo_kinbook">K<span class="logo_kinbook_rouge">indbook</span></span></h1>
+    </div>
 
     <form action="index.php?action=connexion" method="POST">
         <label for="login">Identifiant</label>
@@ -18,8 +23,7 @@ $titre="Login";
 
         <input type="submit" name="envoyer" id="bouton-envoyer" value="Envoyer">
     </form>
-    <p> Vous n'est pas encore inscrit, inscrivez-vous ici </p>
-    <form name="signin," action="index.php?action=signin" method="Post" style="margin-left: 280px";>
-      <input type="submit" value="Inscription">
-    </form>
+    <a>Vous n'est pas encore inscrit, inscrivez-vous <a href='index.php?action=signin'>ici</a></a>
+</div>
+
 @endsection

@@ -23,7 +23,7 @@ if (isset($_POST["login"], $_POST["mdp"])) { //Si il y a bien un mdp et un id re
 
         }
 
-        header('Location:index.php');//On redirige vers l'accueil.
+        header('Location:index.php?action=index');//On redirige vers l'accueil.
     }
 
     else {

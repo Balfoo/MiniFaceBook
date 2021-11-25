@@ -1,0 +1,45 @@
+/*//////////////////////////////// FONT ////////////////////////////////*/
+
+@font-face {
+    font-family: 'helvetica-bold';
+    src: url('font/helvetica_neue_lt_75_bold-webfont.woff2') format('woff2'),
+         url('font/helvetica_neue_lt_75_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvetica-light';
+    src: url('font/helvetica_neue_lt_45_light-webfont.woff2') format('woff2'),
+         url('font/helvetica_neue_lt_45_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helvetica-medium';
+    src: url('font/helvetica_neue_lt_65_medium-webfont.woff2') format('woff2'),
+         url('font/helvetica_neue_lt_65_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*//////////////////////////////// GENERAL ////////////////////////////////*/
+
+h1 {
+    font-size: 144px;
+    font-family: "helvetica-bold";
+}
+
+.logo_kindbook {
+    font-family: "helvetica-bold";
+}
+.logo_kinbook_rouge {
+    color:#E73023;
+}
+
+/*//////////////////////////////// LOGIN ////////////////////////////////*/
+
+.login-fond {
+    background: url("/img/kinder1.jpg");
+}
