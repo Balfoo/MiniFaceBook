@@ -4,20 +4,32 @@ $titre="Inscription";
 
 
 <?php $__env->startSection('content'); ?>
-    <p>Inscrivez-Vous au KindBook</p>
 
-    <form action="index.php?action=inscription" method="POST">
-        <label for="email">Email : </label>
-        <input type="email" name="email" id="email" required>
+<div class="signin-contenu">
+    <div class="signin-filtre_fond"></div>
 
-        <label for="login">Identifiant : </label>
-        <input type="text" name="login" id="login" required>
+    <div class="signin-logo">
+        <h1><span class="logo_kinbook">K<span class="logo_kinbook_rouge">indbook</span></span></h1>
+        <span>Rejoignez vos amis mangeur de Kinder !</span>
+    </div>
 
-        <label for="mdp">Mot de passe : </label>
-        <input type="password" name="mdp" id="mdp" required>
+    <div class="signin-form">
+        <p>Inscrivez-Vous au KindBook</p>
+        <form class="signin-form_connexion" action="index.php?action=inscription" method="POST">
+            <label for="email">Email : </label>
+            <input class="zone_txt" type="email" name="email" id="email" required>
 
-        <input type="submit" value="Rejoindre l'équipe chocolaté">
-    </form>
+            <label for="login">Identifiant : </label>
+            <input class="zone_txt" type="text" name="login" id="login" required>
+
+            <label for="mdp">Mot de passe : </label>
+            <input class="zone_txt" type="password" name="mdp" id="mdp" required>
+
+            <input class="bouton" type="submit" value="Rejoindre l'équipe chocolaté">
+        </form>
+    </div>
+
+</div>
 
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.log', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

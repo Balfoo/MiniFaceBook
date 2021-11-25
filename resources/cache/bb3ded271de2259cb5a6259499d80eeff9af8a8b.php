@@ -1,3 +1,4 @@
+<link type="text/css" rel="stylesheet" href="../../assets/style.css">
 
 <?php if(isset($_SESSION['info'])): ?>
     <div>

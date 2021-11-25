@@ -24,13 +24,28 @@
     font-style: normal;
 }
 
+
+
+
 /*//////////////////////////////// GENERAL ////////////////////////////////*/
 
-h1 {
-    font-size: 144px;
-    font-family: "helvetica-bold";
+html {
+    font-size: 62.5%; /*met la taille de police à 10, et ne change pas lors de zoom dans la page. 1rem = 10px*/
+    font-family: "helvetica-light";
 }
 
+.contenu{
+    max-width: 1200px; /* boite 1200px max centrée */
+    margin: 0 auto; /* centrage horizontal d'un display block */
+}
+
+h1 {
+    font-size: 14.4rem;
+    font-family: "helvetica-bold";
+    margin: 0;
+}
+
+/*Logo Kindbook*/
 .logo_kindbook {
     font-family: "helvetica-bold";
 }
@@ -38,8 +53,94 @@ h1 {
     color:#E73023;
 }
 
-/*//////////////////////////////// LOGIN ////////////////////////////////*/
+/*Desing des boutons*/
+.bouton {
+    text-decoration: none;
+    color: black;
+    background: rgba(151, 68, 9, 0.5);
+    border: 2px solid #332525;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.bouton:hover {
+    background: rgba(151, 68, 9);
+    transition: 0.2s;
+}
 
-.login-fond {
-    background: url("/img/kinder1.jpg");
+/*Desing des zones de texte*/
+.zone_txt { 
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 0.8rem;
+}
+.zone_txt:focus {
+    outline: rgba(151, 68, 9, 0.5) 2px solid;
+    box-sizing: border-box;
+}
+
+
+/*//////////////////////////////// CONNEXION ET INSCRIPTION////////////////////////////////*/
+
+.login-contenu, .signin-contenu {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute; /*Centrage*/
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../img/kinder1.jpg");
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.login-filtre_fond, .signin-filtre_fond {
+    background: rgba(196, 196, 196, 0.65);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.login-logo > h1, .signin-logo > h1 {
+    margin-bottom: -4.5rem;
+}
+
+.login-logo > span, .signin-logo > span {
+    font-size: 3rem;
+    margin-left: 0.9rem;
+}
+
+.login-form, .login-form_connexion, .login-logo, .signin-form, .signin-form_connexion, .signin-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form, .signin-form {
+    padding: 70px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 2rem;
+}
+
+.login-form input, .signin-form input {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.login-form .bouton, .signin-form .bouton {
+    font-size: 2rem; /*Forcer le bouton de connexion à avoir une taille de police de 2rem pour que ça marche*/
+    font-family: 'helvetica-medium'; 
+}
+
+.login-form > span {
+    margin-bottom: 10px; /*Marge en dessous du OU*/
 }
