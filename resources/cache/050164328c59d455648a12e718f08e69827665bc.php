@@ -1,3 +1,8 @@
+<?php
+$titre="Page3";
+?>
+
+
 <?php $__env->startSection('content'); ?>
     <p>Ceci est la page 3</p>
 <?php $__env->stopSection(); ?>

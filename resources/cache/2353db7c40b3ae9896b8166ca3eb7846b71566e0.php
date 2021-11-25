@@ -1,3 +1,8 @@
+<?php
+$titre="Inscription";
+?>
+
+
 <?php $__env->startSection('content'); ?>
     <p>Page d'inscription</p>
 

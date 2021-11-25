@@ -1,3 +1,8 @@
+<?php
+$titre="Login";
+?>
+
+
 <?php $__env->startSection('content'); ?>
     <p>Ceci est la page de connexion</p>
 
