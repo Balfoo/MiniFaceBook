@@ -1,10 +1,10 @@
 <?php
 $titre="Inscription";
 ?>
-@extends('layouts.app')
+@extends('layouts.log')
 
 @section('content')
-    <p>Page d'inscription</p>
+    <p>Inscrivez-Vous au KindBook</p>
 
     <form action="index.php?action=inscription" method="POST">
         <label for="email">Email : </label>
@@ -16,7 +16,7 @@ $titre="Inscription";
         <label for="mdp">Mot de passe : </label>
         <input type="password" name="mdp" id="mdp" required>
 
-        <input type="submit" value="S'inscrire">
+        <input type="submit" value="Rejoindre l'équipe chocolaté">
     </form>
 
 @endsection

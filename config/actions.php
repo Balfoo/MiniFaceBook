@@ -5,7 +5,7 @@ $listeDesActions = array(
     
     "index" => "actions/index.php",
     "profile" => "actions/profile.php",
-    "page3" => "actions/page3.php",
+    "filsacc" => "actions/filsacc.php",
     "login" => "actions/login.php",
     "connexion" => "actions/connexion.php",
     "deconnexion" => "actions/deconnexion.php",

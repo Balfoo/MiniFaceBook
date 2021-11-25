@@ -1,3 +1,6 @@
+<?php
+$titre="Error 404";
+?>
 @extends('layouts.app')
 @section('content')
     Erreur <br />

@@ -9,33 +9,10 @@
 </head>
 
 <body>
-<header>KindBooK</header>
-
-@isset($_SESSION['info'])
-    <div>
-        <strong>Information : </strong> {{$_SESSION['info']}}
-    </div>
-@endisset
-
-<nav>
-    <a href="index.php">Accueil</a>
-
-    <a href="index.php?action=profile">Profile</a>
-
-    <a href="index.php?action=page3">Page 3</a>
-
-    @isset($_SESSION['id'])
-        Bonjour  {{$_SESSION['login']}} <a href='index.php?action=deconnexion'>Deconnexion</a></li>
-    @else
-        <a href='index.php?action=login'>Login</a>
-        <a href='index.php?action=signin'>Inscription</a>
-    @endif
-</nav>
-
+@include('partials.header')
 <main class="container">
     @yield("content")
 </main>
-
-<footer>Le super pied</footer>
+@include('partials.footer')
 </body>
 </html>

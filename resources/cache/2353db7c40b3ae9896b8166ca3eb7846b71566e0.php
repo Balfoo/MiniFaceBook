@@ -1,5 +1,10 @@
+<?php
+$titre="Inscription";
+?>
+
+
 <?php $__env->startSection('content'); ?>
-    <p>Page d'inscription</p>
+    <p>Inscrivez-Vous au KindBook</p>
 
     <form action="index.php?action=inscription" method="POST">
         <label for="email">Email : </label>
@@ -11,8 +16,8 @@
         <label for="mdp">Mot de passe : </label>
         <input type="password" name="mdp" id="mdp" required>
 
-        <input type="submit" value="S'inscrire">
+        <input type="submit" value="Rejoindre l'équipe chocolaté">
     </form>
 
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('layouts.log', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

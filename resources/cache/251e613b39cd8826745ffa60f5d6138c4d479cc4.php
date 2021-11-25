@@ -1,9 +1,8 @@
 <?php
-$titre="Error 404";
+$titre="Fils d'acctualité";
 ?>
 
 <?php $__env->startSection('content'); ?>
-    Erreur <br />
-    404... Page introuvable...
+    <p>FILS D'ACCTUALITE</p>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
