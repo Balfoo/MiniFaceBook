@@ -1,3 +1,4 @@
+<link type="text/css" rel="stylesheet" href="../../assets/style.css">
 
 @isset($_SESSION['info'])
     <div>
