@@ -41,6 +41,7 @@
 body {
     margin: 0;
     font-size: 1.8rem;
+    background-color: #FAF5ED;
 }
    
 html {
@@ -50,7 +51,7 @@ html {
 
 .contenu{
     max-width: 1200px; /* boite 1200px max centrée */
-    margin: 0 auto; /* centrage horizontal d'un display block */
+    margin: 0 4%; /* centrage horizontal d'un display block */
 }
 
 h1 {
@@ -215,6 +216,7 @@ footer {
  header {
     background: rgba(151, 68, 9, 0.5);
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
  }
 
  .haut-logo_recherche {
@@ -272,3 +274,134 @@ footer {
 .haut-statut_deco img {
     margin-left: 10px;
 }
+
+
+
+/*//////////////////////////////// HAUT DE PAGE ////////////////////////////////*/
+
+.filacc-flex_general {
+    display: flex;
+    flex-direction: row;
+}
+
+.filacc-flex1 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.filacc-flex2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/*Zone d'envoie*/
+.filacc-zone_envoie {
+    max-width: 100%;
+    max-height: 100px;
+    min-width: 100%;
+    min-height: 100px;
+    width: 100%;
+    height: 100px;
+    font-family: 'helvetica-light';
+    margin: 20px 0 10px 0;
+}
+
+/*Affichage des post*/
+.filacc-post {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.33);
+    border: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.filacc-post_titre_contenu {
+    display: flex;
+    flex-direction: column;
+}
+  
+.filacc-post-info {
+    background: rgba(255, 255, 255, 0.33);
+    border-bottom: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 20px;
+    justify-content: end;
+}
+
+.filacc-post-info span {
+    margin-right: 20px;
+}
+  
+.filacc-post_titre_contenu {
+    padding: 10px 20px;
+}
+  
+.filacc-post_titre {
+    font-family: 'helvetica-bold';
+    margin-bottom: 5px;
+}
+ 
+.filacc-post_auteur {
+font-family: 'helvetica-bold';
+}
+  
+  
+.filacc-post_supp a{
+    color: #E73023;
+}
+.filacc-post_supp:hover{
+    text-decoration: underline #E73023;
+}
+
+/*Affichage des amis*/
+.filacc_amis {
+    background: rgba(255, 255, 255, 0.33);
+    border: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+  
+.fillacc-amis_titre_rouge {
+    color: #E73023;
+}
+  
+.fillac-amis_titre {
+    font-family: 'helvetica-bold';
+    text-align: center;
+    display: block;
+}
+  
+.filacc-amis_chercher {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+  
+.filacc-amis_chercher > input:nth-child(1) {
+    width: 100%;
+}
+  
+.filacc-amis_groupe {
+    color: #C4C4C4;
+}
+  
+.filacc-amis_liste {
+    border-bottom: 0.5px solid #C4C4C4;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.filacc-post_img img {
+    width: 100%;
+    height: auto;
+}
+  
