@@ -2,6 +2,13 @@
 $titre="Login";
 ?>
 
+<style>
+    footer {
+        position: absolute !important;
+    }
+</style>
+
+
 
 <?php $__env->startSection('content'); ?>
 

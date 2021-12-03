@@ -1,5 +1,5 @@
 <?php
-$titre="Fils d'acctualité";  
+$titre="Fil d'actualité";  
 ?>
 
 
@@ -12,8 +12,8 @@ $titre="Fils d'acctualité";
         <form action="index.php?action=connexion" method="POST">
             <textarea class="zone_txt filacc-zone_envoie" name="post" id="post" placeholder="Quel kinder mangez-vous aujourd’hui ?"></textarea>
 
-            <div>
-                <input class="bouton" type="submit" name="image" id="image" value="Ajouter une image">
+            <div class="filacc-zone_envoie_bouton">
+                <a href="index.php?action=addimg"><img class="bouton" src="img\ajout_image.png" alt="Ajouter une image"></a>
                 <input class="bouton" type="submit" name="envoyer" id="envoyer" value="Envoyer sur le fil d’actualité">
             </div>
         </form>

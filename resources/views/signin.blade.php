@@ -1,6 +1,13 @@
 <?php
 $titre="Inscription";
 ?>
+
+<style>
+    footer {
+        position: absolute !important;
+    }
+</style>
+
 @extends('layouts.log')
 
 @section('content')

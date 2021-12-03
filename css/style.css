@@ -52,6 +52,8 @@ html {
 .contenu{
     max-width: 1200px; /* boite 1200px max centrée */
     margin: 0 4%; /* centrage horizontal d'un display block */
+    position: relative;
+    min-height: 100%;
 }
 
 h1 {
@@ -148,6 +150,7 @@ a {
 .login-form, .login-form_connexion, .login-logo, .signin-form, .signin-form_connexion, .signin-logo {
     display: flex;
     flex-direction: column;
+    margin-bottom: 0px;
 }
 
 .login-form, .signin-form {
@@ -180,7 +183,7 @@ a {
 /*//////////////////////////////// BAS DE PAGE ////////////////////////////////*/
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     left: 0;
@@ -277,7 +280,7 @@ footer {
 
 
 
-/*//////////////////////////////// HAUT DE PAGE ////////////////////////////////*/
+/*//////////////////////////////// FIL D'ACTUALITE ET PROFIL ////////////////////////////////*/
 
 .filacc-flex_general {
     display: flex;
@@ -305,6 +308,14 @@ footer {
     height: 100px;
     font-family: 'helvetica-light';
     margin: 20px 0 10px 0;
+}
+
+.filacc-zone_envoie_bouton {
+    display: flex;
+align-items: flex-start;
+}
+.filacc-zone_envoie_bouton input {
+    margin-left: 5px;
 }
 
 /*Affichage des post*/
@@ -404,4 +415,106 @@ font-family: 'helvetica-bold';
     width: 100%;
     height: auto;
 }
+
+
+
+/*//////////////////////////////// PROFIL ////////////////////////////////*/
+
+.profil-flex_general {
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-flex_general2 {
+    display: flex;
+}
+
+/*entête*/
+.profil-entete img {
+    border-radius: 20px 0px 0px 20px;
+}
+
+.profil-entete {
+    background: rgba(255, 255, 255, 0.33);
+    border: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.profil-entete_nom-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-entete_nom {
+    font-family: 'helvetica-bold';
+    font-size: 5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.33);
+    border-bottom: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+   }
+
+.profil-entete_desc {
+    padding: 20px;
+}
+
+/*Demande et envoie d'amis*/
+.profil-demande {
+    display: flex;
+    background: rgba(255, 255, 255, 0.33);
+    border: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.profil-demande_amis, .profil-demande_envoye {
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-demande_amis {
+    border-right: 0.5px solid #C4C4C4;
+  }
+
+.profil-demande_amis {
+    flex-grow: 1;
+  }
   
+  .profil-demande_amis, .profil-demande_envoye {
+    flex-grow: 1;
+  }
+    
+  .profil-demande_th {
+    background: rgba(255, 255, 255, 0.33);
+    border-bottom: 0.5px solid #C4C4C4;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    font-family: "helvetica-bold";
+  }
+  
+.profil-demande_nom_div {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-demande_nom {
+    border-bottom: 0.5px solid #C4C4C4;
+    padding: 5px 0; 
+    display: flex;
+    align-items: center;
+}
+
+.profil-demande_nom img {
+    margin-left: 5px;
+}
+
+/*Le reste est dans le section fil d'actualité et profil*/
+
+
+
+   
