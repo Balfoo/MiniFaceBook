@@ -5,8 +5,8 @@ $titre="Fil d'actualité";
 
 <?php $__env->startSection('content'); ?>
 
-<div class="filacc-flex_general">
-    <div class="contenu filacc-flex1">
+<div class="filacc-flex_general contenu">
+    <div class="filacc-flex1">
 
         <!--Envoie d'un message -->
         <form action="index.php?action=connexion" method="POST">
@@ -28,7 +28,7 @@ $titre="Fil d'actualité";
                 <span class="filacc-post_supp"><a href="index.php?action=supprimer"><img src="img\poubelle.png" alt="poubelle">Supprimer</a></span>
             </div>
             <div class="filacc-post_titre_contenu">
-                <span class="filacc-post_titre"><?php echo e($poste['titre']); ?></span>
+                <!--<span class="filacc-post_titre"><?php echo e($poste['titre']); ?></span>-->
                 <span class="filacc-post_contenu"><?php echo e($poste['contenu']); ?></span>
                 <span class="filacc-post_img"><img src="img\animal_bizare.jpg" alt="img"></span>
             </div>
@@ -37,13 +37,13 @@ $titre="Fil d'actualité";
     </div>
 
         <!--Affichage des amis-->
-    <div class="contenu filacc-flex2">
+    <div class="filacc-flex2">
         <div class="filacc_amis">
             <span class="fillac-amis_titre">A<span class="fillacc-amis_titre_rouge">mis</span></span>
 
             <div class="filacc-amis_chercher">
                 <input class="zone_txt" id="saisieFiltreAmis" type="texte" placeholder="Chercher un amis">
-                <button class="haut-btn_chercher" type="submit" class="bts bts-info"><img src="img\loupe.png" alt="Rechercher"></button>
+                <!--<button class="haut-btn_chercher" type="submit"><img src="img\loupe.png" alt="Rechercher"></button>-->
             </div>
 
             <ul class="filacc-amis_ul" id="ulFiltreAmis">

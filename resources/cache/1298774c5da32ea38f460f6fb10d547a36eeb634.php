@@ -4,11 +4,11 @@ $titre="Profile";
  
 <?php $__env->startSection('content'); ?>
     
-<div class="profil-flex_general">
+<div class="profil-flex_general contenu">
     
     <div>
         <!--Entête du profil-->
-        <div class="profil-entete contenu">
+        <div class="profil-entete">
             <img src="img\photo_profil.png" alt="photo de profil">
             <div class="profil-entete_nom-desc">
                 <span class="profil-entete_nom">Pingui K. / Team</span>
@@ -19,18 +19,18 @@ $titre="Profile";
 
     <div class="profil-flex_general2">
 
-        <div class="contenu filacc-flex1">
+        <div class="filacc-flex1">
             <!--Demances d'amis-->
             <div class="profil-demande">
                 <div class="profil-demande_amis">
-                    <span class="profil-demande_th">1 Demandes d’A<span class="fillacc-amis_titre_rouge">mis</span>
+                    <span class="profil-demande_th">1 Demande(s) d’A<span class="fillacc-amis_titre_rouge">mis</span></span>
                         <div class="profil-demande_nom_div">
                             <span class="profil-demande_nom">Chocolat au sel <a href="index.php?action=ok.php"> <img class="bouton" src="img\ok.png" alt="Accepter"> </a> <a href="index.php?action=non.php"> <img class="bouton" src="img\croix.png" alt="Refuser"> </a> </span>
                             <span class="profil-demande_nom">Chocolat au sel <a href="index.php?action=ok.php"> <img class="bouton" src="img\ok.png" alt="Accepter"> </a> <a href="index.php?action=non.php"> <img class="bouton" src="img\croix.png" alt="Refuser"> </a> </span>
                         </div>
                 </div>
                 <div class="profil-demande_envoye">
-                    <span class="profil-demande_th">1 Demandes d’A<span class="fillacc-amis_titre_rouge">mis</span> envoyées</span>
+                    <span class="profil-demande_th">1 Demande(s) d’A<span class="fillacc-amis_titre_rouge">mis</span> envoyées</span>
                         <div class="profil-demande_nom_div">
                             <span class="profil-demande_nom">Florent H.</span>
                             <span class="profil-demande_nom">Florent H.</span>
@@ -56,7 +56,7 @@ $titre="Profile";
                     <span class="filacc-post_supp"><a href="index.php?action=supprimer"><img src="img\poubelle.png" alt="poubelle">Supprimer</a></span>
                 </div>
                 <div class="filacc-post_titre_contenu">
-                    <span class="filacc-post_titre">{$poste['titre']}</span>
+                    <!--<span class="filacc-post_titre">{$poste['titre']}</span>-->
                     <span class="filacc-post_contenu">{$poste['contenu']}</span>
                     <span class="filacc-post_img"><img src="img\animal_bizare.jpg" alt="img"></span>
                 </div>
@@ -64,13 +64,13 @@ $titre="Profile";
         </div>
 
         <!--Affichage des amis-->
-        <div class="contenu filacc-flex2">
+        <div class="filacc-flex2">
             <div class="filacc_amis">
                 <span class="fillac-amis_titre">A<span class="fillacc-amis_titre_rouge">mis</span></span>
 
                 <div class="filacc-amis_chercher">
                     <input class="zone_txt" id="saisieFiltreAmis" type="texte" placeholder="Chercher un amis">
-                    <button class="haut-btn_chercher" type="submit" class="bts bts-info"><img src="img\loupe.png" alt="Rechercher"></button>
+                    <!--<button class="haut-btn_chercher" type="submit"><img src="img\loupe.png" alt="Rechercher"></button>-->
                 </div>
 
                 <ul class="filacc-amis_ul" id="ulFiltreAmis">

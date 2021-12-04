@@ -50,8 +50,8 @@ html {
 }
 
 .contenu{
-    max-width: 1200px; /* boite 1200px max centrée */
-    margin: 0 4%; /* centrage horizontal d'un display block */
+    max-width: 1300px; /* boite 1200px max centrée */
+    margin: 0 auto; /* centrage horizontal d'un display block */
     position: relative;
     min-height: 100%;
 }
@@ -98,6 +98,9 @@ a {
     box-sizing: border-box;
     border-radius: 10px;
     padding-left: 0.8rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    font-family: "helvetica-light";
 }
 .zone_txt:focus {
     outline: rgba(151, 68, 9, 0.5) 2px solid;
@@ -165,6 +168,11 @@ a {
     font-size: 2rem;
 }
 
+.resterco {
+    align-items: center;
+    display: flex;
+}
+
 .login-form .bouton, .signin-form .bouton {
     font-size: 2rem; /*Forcer le bouton de connexion à avoir une taille de police de 2rem pour que ça marche*/
     font-family: 'helvetica-medium'; 
@@ -212,7 +220,6 @@ footer {
  }
 
  .haut-chercher .zone_txt {
-    height: 3rem;
     width: 30rem;
  }
 
@@ -230,7 +237,7 @@ footer {
 .haut-nav {
      display: flex;
      align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
  }
 
 .haut-logo {
@@ -307,7 +314,7 @@ footer {
     width: 100%;
     height: 100px;
     font-family: 'helvetica-light';
-    margin: 20px 0 10px 0;
+    margin: 30px 0 10px 0;
 }
 
 .filacc-zone_envoie_bouton {
@@ -377,7 +384,7 @@ font-family: 'helvetica-bold';
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin: 30px 0 0 20px;
 }
   
 .fillacc-amis_titre_rouge {
@@ -496,8 +503,8 @@ font-family: 'helvetica-bold';
     
   .profil-demande_th {
     background: rgba(255, 255, 255, 0.33);
-    border-bottom: 0.5px solid #C4C4C4;
     box-sizing: border-box;
+    border-bottom: 0.5px solid #C4C4C4;
     padding: 10px 20px;
     font-family: "helvetica-bold";
   }
@@ -523,4 +530,10 @@ font-family: 'helvetica-bold';
 
 
 
-   
+
+@media screen and (max-width: 1330px)
+{
+    .contenu {
+        margin: 0 10px;
+    }
+}

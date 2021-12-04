@@ -28,7 +28,7 @@ $titre="Login";
                 <label for="mdp">Mot de passe</label>
                 <input class="zone_txt" type="password" name="mdp" id="mdp" required>
 
-                <div>
+                <div class="resterco">
                     <label for="resterco">Rester connecté</label>
                     <input class="zone_txt" type="checkbox" name="resterco" id='resterco' value=1>
                 </div>

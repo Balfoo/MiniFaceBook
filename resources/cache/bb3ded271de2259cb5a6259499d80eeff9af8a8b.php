@@ -6,7 +6,7 @@
 <?php endif; ?>
 
 <header>
-    <nav class="haut-nav">
+    <nav class="haut-nav contenu">
         <div class="haut-logo_recherche">
             <li class="haut-logo"><h1><a href="index.php?action=index"><span class="logo_kinbook">K<span class="logo_kinbook_rouge">indBook</span></span></a></h1></li>
             <li><?php echo $__env->make('partials.search', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?></li>
