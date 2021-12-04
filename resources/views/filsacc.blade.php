@@ -42,14 +42,21 @@ $titre="Fil d'actualité";
             <span class="fillac-amis_titre">A<span class="fillacc-amis_titre_rouge">mis</span></span>
 
             <div class="filacc-amis_chercher">
-                <input class="zone_txt" type="texte" class="form-controle" placeholder="Chercher un amis">
+                <input class="zone_txt" id="saisieFiltreAmis" type="texte" placeholder="Chercher un amis">
                 <button class="haut-btn_chercher" type="submit" class="bts bts-info"><img src="img\loupe.png" alt="Rechercher"></button>
             </div>
 
-            <div class="filacc-amis_liste">
-                <a href="index.php?action=amis{$_GET['id']}"><span class="filacc-amis_nom">Dupond</span> <span class="filacc-amis_groupe">/Groupe</span></a>
-                <span class="filacc-ami_status">En ligne <img src="img\en_ligne.png" alt="en ligne"></span>
-            </div>
+            <ul class="filacc-amis_ul" id="ulFiltreAmis">
+                <li class="filacc-amis_liste">
+                    <a href="index.php?action=amis{$_GET['id']}"><span class="filacc-amis_nom">Dupond</span> <span class="filacc-amis_groupe">/Groupe</span></a>
+                    <span class="filacc-ami_status">En ligne <img src="img\en_ligne.png" alt="en ligne"></span>
+                </li>
+
+                <li class="filacc-amis_liste">
+                    <a href="index.php?action=amis{$_GET['id']}"><span class="filacc-amis_nom">Marcel</span> <span class="filacc-amis_groupe">/Groupe</span></a>
+                    <span class="filacc-ami_status">En ligne <img src="img\en_ligne.png" alt="en ligne"></span>
+                </li>
+             </ul>
         </div>
     </div>
 </div>

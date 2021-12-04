@@ -409,6 +409,12 @@ font-family: 'helvetica-bold';
     padding: 5px 0;
     display: flex;
     justify-content: space-between;
+    transition: 0.1s;
+}
+
+.filacc-amis_ul {
+    margin: 0;
+    padding: 0;
 }
   
 .filacc-post_img img {
