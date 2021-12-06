@@ -114,6 +114,12 @@ a {
 
 
 
+@media (max-width: 1330px) {
+    .contenu {
+        margin: 0 10px;
+    }
+}
+
 /*//////////////////////////////// CONNEXION ET INSCRIPTION////////////////////////////////*/
 
 .login-contenu, .signin-contenu {
@@ -186,6 +192,47 @@ a {
     margin-top: 0;
 }
 
+
+
+@media (max-width:1160px){
+    .login-contenu, .signin-contenu {
+        flex-direction: column;
+       }
+
+    .login-logo > h1, .signin-logo > h1 {
+        margin-bottom: -2rem;
+        font-size: 6.4rem;
+    }
+    
+    .login-logo > span, .signin-logo > span {
+        font-size: 2rem;
+        margin-left: 0.3rem;
+    }
+
+    .login-form, .signin-form {
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.5);
+        font-size: 2rem;
+        }
+
+    .login-form, .signin-form {
+        padding: 20px;
+    }
+    
+    .login-form .bouton, .signin-form .bouton {
+        font-size: 1.8rem;
+    }
+    
+    .login-form, .signin-form {
+        margin-top: -225px;
+    }
+    
+    .login-logo, .signin-logo {
+        margin-top: -100px;
+    }
+       
+}
 
 
 /*//////////////////////////////// BAS DE PAGE ////////////////////////////////*/
@@ -283,6 +330,36 @@ footer {
 
 .haut-statut_deco img {
     margin-left: 10px;
+}
+
+.header-toogle {
+    display: none;
+}
+
+@media (max-width:900px){
+
+    .haut-nav {
+        flex-direction: column;
+    }
+
+    .haut-logo_recherche {
+        margin-top: 20px;
+    }
+    
+    .haut-logo_recherche {
+        flex-direction: column;
+    }
+
+    .haut-fil_actu, .haut-nom-utilisateur {
+        width: 30rem;
+        text-align: center;
+    }
+
+    .haut-statut_deco {
+        display: flex;
+    }
+       
+       
 }
 
 
@@ -429,7 +506,30 @@ font-family: 'helvetica-bold';
     height: auto;
 }
 
+li.filacc-amis_liste a:hover {
+    text-decoration: underline 0.5px solid #C4C4C4;
+   }
+   
 
+
+
+@media (max-width:900px){
+    .filacc-flex_general {
+        flex-direction: column-reverse;
+    }
+
+    .filacc_amis {
+        margin: 30px 0 0 0px;
+    }
+    
+    .filacc-flex2 {
+        width: 100%;
+    }
+    
+    .filacc-flex1 {
+        width: 100%;
+    }
+}
 
 /*//////////////////////////////// PROFIL ////////////////////////////////*/
 
@@ -529,11 +629,20 @@ font-family: 'helvetica-bold';
 /*Le reste est dans le section fil d'actualité et profil*/
 
 
+@media (max-width:900px){
+    .profil-flex_general2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+       
+}
 
+@media (max-width: 500px) {
+    .profil-entete {
+        flex-direction: column;
+       }
 
-@media screen and (max-width: 1330px)
-{
-    .contenu {
-        margin: 0 10px;
+       .profil-entete img {
+        border-radius: 0px 20px 20px 0px;
     }
 }

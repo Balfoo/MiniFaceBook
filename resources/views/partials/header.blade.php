@@ -5,6 +5,8 @@
 @endisset
 
 <header>
+    
+    <!--menu-->
     <nav class="haut-nav contenu">
         <div class="haut-logo_recherche">
             <li class="haut-logo"><h1><a href="index.php?action=index"><span class="logo_kinbook">K<span class="logo_kinbook_rouge">indBook</span></span></a></h1></li>
