@@ -12,12 +12,12 @@ if (isset($_POST["login"], $_POST["mdp"], $_POST["email"])) { //On verifie que l
         header("Location:index.php"); //On retourne à l'accueil.
         
     } else {
-        $sql = "INSERT INTO user VALUE(NULL, ?, PASSWORD(?),?,NULL,NULL);"; //On renseigne les champs
+        $sql = "INSERT INTO user VALUE(NULL, ?, PASSWORD(?),?,NULL,NULL, ?,'Les Kinders <3');"; //On renseigne les champs
                                 //ID, login, mdp, email, remember, avatar.
                                 //(ID NULL = va en donner un automatiquement ; ? = attend qu'on le donne nous)
                                 //PASSWORD(?) pement de dire à phpmyadmin que c'est un mdp = il va le chifrer.
     $q = $pdo->prepare($sql);
-    $q->execute([$_POST["login"], $_POST["mdp"], $_POST["email"]]);
+    $q->execute([$_POST["login"], $_POST["mdp"], $_POST["email"],$_POST["genre"]]);
 
     //Quand le compte est créer, on connecte directement l'utilisateur.
     $_SESSION['id'] = $pdo->lastInsertId(); //L'id = le dernier id créé dans la base de donnée.

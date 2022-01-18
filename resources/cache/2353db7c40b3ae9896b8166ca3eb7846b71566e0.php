@@ -17,7 +17,7 @@ $titre="Inscription";
 
     <div class="signin-logo">
         <h1><span class="logo_kinbook">K<span class="logo_kinbook_rouge">indbook</span></span></h1>
-        <span>Rejoignez vos amis mangeur de Kinder !</span>
+        <span>Rejoignez vos amis mangeurs de Kinder !</span>
     </div>
 
     <div class="signin-form">
@@ -31,6 +31,16 @@ $titre="Inscription";
 
             <label for="mdp">Mot de passe : </label>
             <input class="zone_txt" type="password" name="mdp" id="mdp" required>
+
+            <label for="genre">KinTeam</label>
+            <select class="bouton" name="genre" id="genre">
+                <option value="Beuno">Beuno</option>
+                <option value="Country">Country</option>
+                <option value="Surprise">Surprise</option>
+                <option value="Barre">Barre</option>
+                <option value="Choco'bon">Choco'bon</option>
+
+            </select>
 
             <input class="bouton" type="submit" value="Rejoindre l'équipe chocolaté">
         </form>

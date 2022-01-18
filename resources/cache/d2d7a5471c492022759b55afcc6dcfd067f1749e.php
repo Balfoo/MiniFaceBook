@@ -17,7 +17,7 @@ $titre="Login";
 
         <div class="login-logo">
             <h1><span class="logo_kinbook">K<span class="logo_kinbook_rouge">indbook</span></span></h1>
-            <span>Rejoignez vos amis mangeur de Kinder !</span>
+            <span>Rejoignez vos amis mangeurs de Kinder !</span>
         </div>
 
         <div class="login-form">

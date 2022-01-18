@@ -3,7 +3,7 @@
 
 $listeDesActions = array(
     
-    "index" => "actions/index.php",
+    "index" => "actions/filsacc.php",
     "profile" => "actions/profile.php",
     "filsacc" => "actions/filsacc.php",
     "login" => "actions/login.php",
@@ -11,5 +11,13 @@ $listeDesActions = array(
     "deconnexion" => "actions/deconnexion.php",
     "signin" => "actions/signin.php",
     "inscription" => "actions/inscription.php",
+    "message" => "actions/message.php",
+    "search" => "actions/search.php",
+    "ajoutamis" => "actions/ajoutamis.php",
+    "confirmer_amis" => "actions/confirmer_amis.php",
+    "deleted" => "actions/deleted.php",
+    "delete_message" =>"actions/delete_message.php",
+    "modifier-profile" => "actions/modifier-profile.php",
+
 
 );

@@ -1,12 +1,9 @@
 <?php
-if(isset($_POST["titre"], $_POST["contenu"], $_POST["dateEcrit"],$_POST["image"],$_POST["idAuteur"],$_POST["idAmi"])) {
-    $sql = "INSERT INTO ecrit VALUE(NULL, ?, CONTENU(?),?,NULL,NULL);"; 
-    $q = $pdo->prepare($sql);
-    $q->execute([$_POST["titre"], $_POST["contenu"], $_POST["dateEcrit"],$_POST["image"],$_POST["idAuteur"],$_POST["idAmi"]]);
-    
-    $_SESSION['id'] = $pdo->lastInsertId(); 
-    $_SESSION['login'] = $_POST["login"];
+    $idAuteur = $_SESSION['id'];
+    date_default_timezone_set('Europe/Paris');
+    $dateEcrit = date("Y-m-d H:i:s");
+    $q = $pdo -> prepare("INSERT INTO ecrit VALUES (id,'titre',?,?, NULL,?,2)");
+    $q->execute([ $_POST["contenu"], $dateEcrit, $idAuteur]);
 
-    header("Location:index.php");
-}
+    header("Location:index.php?action=filsacc");
 ?>

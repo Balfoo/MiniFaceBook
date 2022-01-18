@@ -1,15 +1,8 @@
 <?php
-$titre="Inscription";
+$titre="Modfifier Profile";  
 ?>
 
-<style>
-    footer {
-        position: absolute !important;
-    }
-</style>
-
-@extends('layouts.log')
-
+@extends('layouts.app')
 @section('content')
 
 <div class="signin-contenu">
@@ -42,10 +35,11 @@ $titre="Inscription";
 
             </select>
 
-            <input class="bouton" type="submit" value="Rejoindre l'équipe chocolaté">
+            <label for="login">Description : </label>
+            <input class="zone_txt" type="text" name="description" id="description" required>
+
+            <input class="bouton" type="submit" value="Modifier Profile">
         </form>
     </div>
 
 </div>
-
-@endsection

@@ -169,9 +169,13 @@ a {
     font-size: 2rem;
 }
 
-.login-form input, .signin-form input {
+.login-form input, .signin-form input, .login-form select, .signin-form select {
     margin-bottom: 10px;
     font-size: 2rem;
+}
+
+.login-form select option, .signin-form select option{
+    font-family: 'helvetica-thin';
 }
 
 .resterco {
@@ -453,6 +457,14 @@ font-family: 'helvetica-bold';
     text-decoration: underline #E73023;
 }
 
+.filacc-jaime {
+    display: flex;
+    align-items: center;
+}
+.filacc-jaime span {
+    margin-left: 10px;
+}
+
 /*Affichage des amis*/
 .filacc_amis {
     background: rgba(255, 255, 255, 0.33);
@@ -559,7 +571,21 @@ li.filacc-amis_liste a:hover {
 .profil-entete_nom-desc {
     display: flex;
     flex-direction: column;
+    position: relative;
+    text-transform: capitalize;
 }
+
+.profil-entete_modif {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    font-size: 1.5rem
+}
+.profil-entete_modif:hover {
+    text-decoration: underline 0.5px solid #C4C4C4;
+}
+
+   
 
 .profil-entete_nom {
     font-family: 'helvetica-bold';
